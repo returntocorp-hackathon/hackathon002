@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt install autoconf
 sudo apt install automake
 sudo apt install autopoint
