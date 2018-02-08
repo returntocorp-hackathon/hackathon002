@@ -70,7 +70,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
      sudo apt-get install -y clang git build-essential tcl clang-tidy
-     echo"Installing Default Hackathon Project Dependencies"
-     sudo ./util/installDefaultDependencies.sh
+     echo "Installing Default Hackathon Project Dependencies"
+     source ./util/installDefaultDependencies.sh
   SHELL
 end
