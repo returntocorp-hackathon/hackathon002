@@ -71,58 +71,58 @@ Vagrant.configure("2") do |config|
      sudo apt-get update
      sudo apt-get install -y clang git build-essential tcl clang-tidy
      echo "Installing Default Hackathon Project Dependencies"
-     sudo apt install autoconf
-     sudo apt install automake
-     sudo apt install autopoint
-     sudo apt install autotools-dev
-     sudo apt install curl
-     sudo apt install freeglut3-dev
-     sudo apt install g++
-     sudo apt install libc-ares-dev
-     sudo apt install libcairo2-dev
-     sudo apt install libcppunit-dev
-     sudo apt install libepoxy-dev
-     sudo apt install libev-dev
-     sudo apt install libevdev-dev
-     sudo apt install libevent-dev
-     sudo apt install libexpat1-dev
-     sudo apt install libffi-dev
-     sudo apt install libgbm-dev
-     sudo apt install libgles2-mesa-dev
-     sudo apt install libgmp-dev 
-     sudo apt install libgnutls-dev
-     sudo apt install libinput-dev
-     sudo apt install liblz4-dev 
-     sudo apt install liblzo2-dev
-     sudo apt install libmtdev-dev
-     sudo apt install libpam0g-dev
-     sudo apt install libpciaccess-dev
-     sudo apt install libpcre3-dev
-     sudo apt install libseccomp-dev
-     sudo apt install libsqlite3-dev
-     sudo apt install libssh2-1-dev
-     sudo apt install libssl-dev
-     sudo apt install libstartup-notification0-dev
-     sudo apt install libtool
-     sudo apt install libudev-dev
-     sudo apt install libwacom-dev
-     sudo apt install libxcb-composite0-dev
-     sudo apt install libxcursor-dev
-     sudo apt install libxfont-dev
-     sudo apt install libxkbfile-dev
-     sudo apt install libxml2-dev
-     sudo apt install lzop
-     sudo apt install make
-     sudo apt install nasm
-     sudo apt install ncurses*
-     sudo apt install nettle-dev 
-     sudo apt install opencl-headers
-     sudo apt install pkg-config
-     sudo apt install unzip
-     sudo apt install wayland-protocols
-     sudo apt install x11proto*
-     sudo apt install xfonts-utils
-     sudo apt install xutils-dev
-     sudo apt install zlib1g-dev 
+     sudo apt -y install autoconf
+     sudo apt -y install automake
+     sudo apt -y install autopoint
+     sudo apt -y install autotools-dev
+     sudo apt -y install curl
+     sudo apt -y install freeglut3-dev
+     sudo apt -y install g++
+     sudo apt -y install libc-ares-dev
+     sudo apt -y install libcairo2-dev
+     sudo apt -y install libcppunit-dev
+     sudo apt -y install libepoxy-dev
+     sudo apt -y install libev-dev
+     sudo apt -y install libevdev-dev
+     sudo apt -y install libevent-dev
+     sudo apt -y install libexpat1-dev
+     sudo apt -y install libffi-dev
+     sudo apt -y install libgbm-dev
+     sudo apt -y install libgles2-mesa-dev
+     sudo apt -y install libgmp-dev 
+     sudo apt -y install libgnutls-dev
+     sudo apt -y install libinput-dev
+     sudo apt -y install liblz4-dev 
+     sudo apt -y install liblzo2-dev
+     sudo apt -y install libmtdev-dev
+     sudo apt -y install libpam0g-dev
+     sudo apt -y install libpciaccess-dev
+     sudo apt -y install libpcre3-dev
+     sudo apt -y install libseccomp-dev
+     sudo apt -y install libsqlite3-dev
+     sudo apt -y install libssh2-1-dev
+     sudo apt -y install libssl-dev
+     sudo apt -y install libstartup-notification0-dev
+     sudo apt -y install libtool
+     sudo apt -y install libudev-dev
+     sudo apt -y install libwacom-dev
+     sudo apt -y install libxcb-composite0-dev
+     sudo apt -y install libxcursor-dev
+     sudo apt -y install libxfont-dev
+     sudo apt -y install libxkbfile-dev
+     sudo apt -y install libxml2-dev
+     sudo apt -y install lzop
+     sudo apt -y install make
+     sudo apt -y install nasm
+     sudo apt -y install ncurses*
+     sudo apt -y install nettle-dev 
+     sudo apt -y install opencl-headers
+     sudo apt -y install pkg-config
+     sudo apt -y install unzip
+     sudo apt -y install wayland-protocols
+     sudo apt -y install x11proto*
+     sudo apt -y install xfonts-utils
+     sudo apt -y install xutils-dev
+     sudo apt -y install zlib1g-dev 
   SHELL
 end
