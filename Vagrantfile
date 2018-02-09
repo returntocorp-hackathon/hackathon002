@@ -68,9 +68,10 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
+     echo "========>>> PROVISIONING BASE SYSTEM <<<========"
      sudo apt-get update
      sudo apt-get install -y clang git build-essential tcl clang-tidy
-     echo "Installing Default Hackathon Project Dependencies"
+     echo "========>>> INSTALLING DEFAULT HACKATHON PROJECT DEPENDENCIES <<<========"
      sudo apt-get -y install autoconf
      sudo apt-get -y install automake
      sudo apt-get -y install autopoint
