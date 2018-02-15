@@ -69,10 +69,11 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
      echo "========>>> PROVISIONING BASE SYSTEM <<<========"
+     sudo ex +"%s@DPkg@//DPkg" -cwq /etc/apt/apt.conf.d/70debconf
+     sudo dpkg-reconfigure debconf -f noninteractive -p critical
      sudo apt-get update
      sudo apt-get install -y clang git build-essential tcl clang-tidy
      echo "========>>> INSTALLING DEFAULT HACKATHON PROJECT DEPENDENCIES <<<========"
-     export DEBIAN_FRONTEND=noninteractive
      sudo apt-get -y install autoconf
      sudo apt-get -y install automake
      sudo apt-get -y install autopoint
