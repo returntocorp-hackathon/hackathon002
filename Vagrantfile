@@ -72,6 +72,7 @@ Vagrant.configure("2") do |config|
      sudo apt-get update
      sudo apt-get install -y clang git build-essential tcl clang-tidy
      echo "========>>> INSTALLING DEFAULT HACKATHON PROJECT DEPENDENCIES <<<========"
+     export DEBIAN_FRONTEND=noninteractive
      sudo apt-get -y install autoconf
      sudo apt-get -y install automake
      sudo apt-get -y install autopoint
