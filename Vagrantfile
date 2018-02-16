@@ -68,7 +68,64 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
+     echo "========>>> PROVISIONING BASE SYSTEM <<<========"
+     sudo ex +"%s@DPkg@//DPkg" -cwq /etc/apt/apt.conf.d/70debconf
+     sudo dpkg-reconfigure debconf -f noninteractive -p critical
      sudo apt-get update
      sudo apt-get install -y clang git build-essential tcl clang-tidy
+     echo "========>>> INSTALLING DEFAULT HACKATHON PROJECT DEPENDENCIES <<<========"
+     sudo apt-get -y install autoconf
+     sudo apt-get -y install automake
+     sudo apt-get -y install autopoint
+     sudo apt-get -y install autotools-dev
+     sudo apt-get -y install curl
+     sudo apt-get -y install freeglut3-dev
+     sudo apt-get -y install g++
+     sudo apt-get -y install libc-ares-dev
+     sudo apt-get -y install libcairo2-dev
+     sudo apt-get -y install libcppunit-dev
+     sudo apt-get -y install libepoxy-dev
+     sudo apt-get -y install libev-dev
+     sudo apt-get -y install libevdev-dev
+     sudo apt-get -y install libevent-dev
+     sudo apt-get -y install libexpat1-dev
+     sudo apt-get -y install libffi-dev
+     sudo apt-get -y install libgbm-dev
+     sudo apt-get -y install libgles2-mesa-dev
+     sudo apt-get -y install libgmp-dev 
+     sudo apt-get -y install libgnutls-dev
+     sudo apt-get -y install libinput-dev
+     sudo apt-get -y install liblz4-dev 
+     sudo apt-get -y install liblzo2-dev
+     sudo apt-get -y install libmtdev-dev
+     sudo apt-get -y install libpam0g-dev
+     sudo apt-get -y install libpciaccess-dev
+     sudo apt-get -y install libpcre3-dev
+     sudo apt-get -y install libseccomp-dev
+     sudo apt-get -y install libsqlite3-dev
+     sudo apt-get -y install libssh2-1-dev
+     sudo apt-get -y install libssl-dev
+     sudo apt-get -y install libstartup-notification0-dev
+     sudo apt-get -y install libtool
+     sudo apt-get -y install libudev-dev
+     sudo apt-get -y install libwacom-dev
+     sudo apt-get -y install libxcb-composite0-dev
+     sudo apt-get -y install libxcursor-dev
+     sudo apt-get -y install libxfont-dev
+     sudo apt-get -y install libxkbfile-dev
+     sudo apt-get -y install libxml2-dev
+     sudo apt-get -y install lzop
+     sudo apt-get -y install make
+     sudo apt-get -y install nasm
+     sudo apt-get -y install ncurses*
+     sudo apt-get -y install nettle-dev 
+     sudo apt-get -y install opencl-headers
+     sudo apt-get -y install pkg-config
+     sudo apt-get -y install unzip
+     sudo apt-get -y install wayland-protocols
+     sudo apt-get -y install x11proto*
+     sudo apt-get -y install xfonts-utils
+     sudo apt-get -y install xutils-dev
+     sudo apt-get -y install zlib1g-dev 
   SHELL
 end
