@@ -128,5 +128,60 @@ Vagrant.configure("2") do |config|
      sudo apt-get -y install xfonts-utils
      sudo apt-get -y install xutils-dev
      sudo apt-get -y install zlib1g-dev 
+     sudo apt-get -y install uuid-dev
+     sudo apt-get -y install default-jre
+     sudo apt-get -y install gawk
+     sudo apt-get -y install gperf
+     sudo apt-get -y install libao-dev
+     sudo apt-get -y install libasound2-dev
+     sudo apt-get -y install libass-dev
+     sudo apt-get -y install libavahi-client-dev
+     sudo apt-get -y install libavahi-common-dev
+     sudo apt-get -y install libbluetooth-dev
+     sudo apt-get -y install libbluray-dev
+     sudo apt-get -y install libbz2-dev
+     sudo apt-get -y install libcap-dev
+     sudo apt-get -y install libcdio-dev
+     sudo apt-get -y install libcec-dev
+     sudo apt-get -y install libcurl-dev
+     sudo apt-get -y install libcwiid-dev
+     sudo apt-get -y install libdbus-1-dev
+     sudo apt-get -y install libegl1-mesa-dev
+     sudo apt-get -y install libfontconfig-dev
+     sudo apt-get -y install libfreetype6-dev
+     sudo apt-get -y install libfribidi-dev
+     sudo apt-get -y install libgif-dev
+     sudo apt-get -y install libgl-dev
+     sudo apt-get -y install libglu-dev
+     sudo apt-get -y install libiso9660-dev
+     sudo apt-get -y install libjpeg-dev
+     sudo apt-get -y install libltdl-dev
+     sudo apt-get -y install libmicrohttpd-dev
+     sudo apt-get -y install libmpcdec-dev
+     sudo apt-get -y install libmysqlclient-dev
+     sudo apt-get -y install libnfs-dev
+     sudo apt-get -y install libplist-dev
+     sudo apt-get -y install libpng-dev
+     sudo apt-get -y install libpulse-dev
+     sudo apt-get -y install libshairplay-dev
+     sudo apt-get -y install libsmbclient-dev
+     sudo apt-get -y install libssh-dev
+     sudo apt-get -y install libswscale-dev
+     sudo apt-get -y install libtag1-dev
+     sudo apt-get -y install libtinyxml-dev
+     sudo apt-get -y install libusb-dev
+     sudo apt-get -y install libva-dev
+     sudo apt-get -y install libvdpau-dev
+     sudo apt-get -y install libxmu-dev
+     sudo apt-get -y install libxrandr-dev
+     sudo apt-get -y install libxslt1-dev
+     sudo apt-get -y install libxt-dev
+     sudo apt-get -y install lsb-release
+     sudo apt-get -y install rapidjson-dev
+     sudo apt-get -y install python-dev
+     sudo apt-get -y install python-imaging
+     sudo apt-get -y install python-support
+     sudo apt-get -y install swig
+     sudo apt-get -y install yasm
   SHELL
 end
