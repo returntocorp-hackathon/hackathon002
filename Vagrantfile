@@ -184,5 +184,10 @@ Vagrant.configure("2") do |config|
      sudo apt-get -y install python-support
      sudo apt-get -y install swig
      sudo apt-get -y install yasm
+     sudo apt-get -y install perl
+     sudo apt-get -y install protobuf-compiler
+     sudo apt-get -y install libprotobuf-dev
+     sudo apt-get -y install libncurses5-dev
+     sudo apt-get -y install libutempter-dev
   SHELL
 end
