@@ -79,6 +79,7 @@ Vagrant.configure("2") do |config|
      sudo apt-get -y install autopoint
      sudo apt-get -y install autotools-dev
      sudo apt-get -y install curl
+     sudo apt-get -y install cmake
      sudo apt-get -y install freeglut3-dev
      sudo apt-get -y install g++
      sudo apt-get -y install libc-ares-dev
