@@ -144,6 +144,7 @@ Vagrant.configure("2") do |config|
      sudo apt-get -y install libcdio-dev
      sudo apt-get -y install libcec-dev
      sudo apt-get -y install libcurl-dev
+     sudo apt-get -y install libcurl4-openssl-dev
      sudo apt-get -y install libcwiid-dev
      sudo apt-get -y install libdbus-1-dev
      sudo apt-get -y install libegl1-mesa-dev
