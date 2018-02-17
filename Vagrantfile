@@ -189,5 +189,11 @@ Vagrant.configure("2") do |config|
      sudo apt-get -y install libprotobuf-dev
      sudo apt-get -y install libncurses5-dev
      sudo apt-get -y install libutempter-dev
+     sudo apt-get -y install libglib2.0-dev
+     sudo apt-get -y install intltool
+     sudo apt-get -y install libarchive-dev
+     sudo apt-get -y install libjansson-dev
+     sudo apt-get -y install valac
+     sudo apt-get -y install libfuse-dev
   SHELL
 end
