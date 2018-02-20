@@ -195,6 +195,8 @@ Vagrant.configure("2") do |config|
      sudo apt-get -y install libjansson-dev
      sudo apt-get -y install valac
      sudo apt-get -y install libfuse-dev
-     sudo apt-get -y install qt5-default
+     sudo apt-get -y install qttools5-dev-tools
+     sudo apt-get -y install libqt5svg5-dev
+     sudo apt-get -y install qtmultimedia5-dev
   SHELL
 end
